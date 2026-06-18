@@ -11,7 +11,7 @@ function MyOrdersPage() {
         const token = localStorage.getItem("token");
 
         const res = await axios.get(
-          "http://localhost:5000/api/orders/my",
+          "https://e-backend-peach.vercel.app/api/orders/my",
           {
             headers: {
               Authorization: `Bearer ${token}`,

@@ -15,7 +15,7 @@ function AdminDashboard() {
         const token = localStorage.getItem("token");
 
         const res = await axios.get(
-          "http://localhost:5000/api/admin/stats",
+          "https://e-backend-peach.vercel.app/api/admin/stats",
           {
             headers: {
               Authorization: `Bearer ${token}`,

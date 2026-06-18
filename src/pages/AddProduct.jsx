@@ -24,7 +24,7 @@ function AddProduct() {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        "http://localhost:5000/api/admin/product",
+        "https://e-backend-peach.vercel.app/api/admin/product",
         formData,
         {
           headers: {

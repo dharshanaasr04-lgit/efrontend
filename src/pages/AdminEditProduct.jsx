@@ -18,7 +18,7 @@ function AdminEditProduct() {
     const fetchProduct = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/products/${id}`
+          `https://e-backend-peach.vercel.app/api/products/${id}`
         );
 
         setProduct(res.data);
@@ -44,7 +44,7 @@ function AdminEditProduct() {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        `http://localhost:5000/api/admin/product/${id}`,
+        `https://e-backend-peach.vercel.app/api/admin/product/${id}`,
         product,
         {
           headers: {

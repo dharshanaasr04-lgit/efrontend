@@ -8,7 +8,7 @@ function AdminProducts() {
   const fetchProducts = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/products"
+        "https://e-backend-peach.vercel.app/api/products"
       );
 
       setProducts(res.data);
@@ -28,7 +28,7 @@ function AdminProducts() {
       const token = localStorage.getItem("token");
 
       await axios.delete(
-        `http://localhost:5000/api/admin/product/${id}`,
+        `https://e-backend-peach.vercel.app/api/admin/product/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

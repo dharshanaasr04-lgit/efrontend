@@ -27,7 +27,7 @@ function RegisterPage() {
       setLoading(true);
 
       await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://e-backend-peach.vercel.app/api/auth/register",
         formData
       );
 

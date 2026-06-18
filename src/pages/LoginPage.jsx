@@ -26,7 +26,7 @@ console.log("Login started");
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://e-backend-peach.vercel.app/api/auth/login",
         formData
       );
 
